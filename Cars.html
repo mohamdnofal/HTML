@@ -6,7 +6,7 @@
     <body>
         <header>
             <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc41b0b5-180c-4310-94a4-f5bc7b0fd466/d4i80r8-0970f866-8bcf-44b3-97e3-71a2dbcf8afc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmM0MWIwYjUtMTgwYy00MzEwLTk0YTQtZjViYzdiMGZkNDY2XC9kNGk4MHI4LTA5NzBmODY2LThiY2YtNDRiMy05N2UzLTcxYTJkYmNmOGFmYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.nu5kpb-erf8_SueckddOCM-Dq_qsOOAFaBns8a7CPVY" alt="Logo">
-            <h1>WE SELL CARS!</h1>
+            <h1> <span id="userName"></span> WE SELL CARS!</h1>
             <nav>
                 <ul>
                     <li> 
@@ -22,22 +22,33 @@
                 
                 
         <main>
+            <h1>Intruduction</h1>
+            <p class="intruduction">
+            We provide multiple services for cars. Such as sale ,service and rent a car.
+            </p>
+            <p>you can change the color of the page by the bellow buttons
+                </p>
+            <div><button type="button" onclick="changeColor('blue')">Blue</button>
+            <button type="button" onclick="changeColor('white')">White</button></div>
             <h1> Cars for sale </h1>
-            <h2><img src="BMW-520i.webp" alt="Erorr"></h2>
-            <p>BMW 520 model 2012 fully loaded with a good conditons price 12000jd</p>
+            <div><button type="button" id="toggle" onclick="showCars()">Hide</button></div>
+            <div id="cars">
+                <h2><img src="BMW-520i.webp" alt="Erorr"></h2>
+                <p>BMW 520 model 2012 fully loaded with a good conditons price 12000jd</p>
 
-            <h3><img src="Mercedes-2016.jpg" alt="Erorr"></h3>
-            <p>Mercedes e200 model 2016 fully loaded with a good conditons price 20000jd </p>
-        
-            <h4><img src="landcruiser.jpg" alt="Erorr"></h4>
-            <p>Land cruiser model 2016 fully loaded with a good conditons 4x4 price 35000jd</p>
-
+                <h3><img src="Mercedes-2016.jpg" alt="Erorr"></h3>
+                <p>Mercedes e200 model 2016 fully loaded with a good conditons price 20000jd </p>
+            
+                <h4><img src="landcruiser.jpg" alt="Erorr"></h4>
+                <p>Land cruiser model 2016 fully loaded with a good conditons 4x4 price 35000jd</p>
+            </div>
         </main> 
         
 
         <footer>
            &copy; Great for web solutions .
         </footer>
+        <script src="h.js"></script>
     </body>
-
+<script src=""></script>
 </html>
