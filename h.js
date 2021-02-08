@@ -1,11 +1,12 @@
 console.log ('cars traiding is loading');
 
 var $name = prompt ('Whats your name');
-if ($name != null) {
+if ($name != '') {
     document.getElementById("userName").innerHTML="Hello " + $name+", ";
     console.log("User Name is" + $name);
 } else{
     console.log("User didn't fill the name!");
+
 }
 
 function changeColor($color) {
@@ -15,7 +16,8 @@ function changeColor($color) {
 }
 
 function showCars() {
-    var x = document.getElementById("cars");
+    // to hide and show cars section
+    var x = document.getElementById("cars"); //x refers to cars section in the page
     var t = document.getElementById("toggle");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -26,6 +28,31 @@ function showCars() {
     }
   }
 
+  var order = prompt("Hello, you like offroad or speed?");
+
+while(order !== "offroad" && order !== "speed") {
+  order = prompt("Hello, you like offroad or speed?");
+}
+
+var itemorder = '';
+
+if(order == "offroad") {
+  itemorder = '<img src="jeep.jpg"/>';
+}
+
+else if(order == "speed") {
+  itemorder = '<img src="speed.jpg"/>';
+}
+
+var itemOfCars = prompt("How many cars do you want?");
+var cars = '';
+
+for(var i=0 ; i<itemOfCars ; i++)
+{
+  cars = cars + itemorder;
+}
+ 
+document.write(cars);
 
 
 
