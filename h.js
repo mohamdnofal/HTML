@@ -11,7 +11,7 @@ if ($name != '') {
 
 function changeColor($color) {
    var body = document.getElementsByTagName("BODY")[0];
-   body.style.background= $color;
+  
    console.log("change color to"+ $color);
 }
 
@@ -30,9 +30,14 @@ function showCars() {
 
   var order = prompt("Hello, you like offroad or speed?");
 
-while(order !== "offroad" && order !== "speed") {
-  order = prompt("Hello, you like offroad or speed?");
+function user()
+{
+   while(order !== "offroad" && order !== "speed") {
+    order = prompt("Hello, you like offroad or speed?");
+    }
 }
+
+user();
 
 var itemorder = '';
 
@@ -53,6 +58,11 @@ for(var i=0 ; i<itemOfCars ; i++)
 }
  
 document.write(cars);
+
+
+
+
+
 
 
 

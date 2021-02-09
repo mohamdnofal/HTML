@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="desing.css">
         <title>cars</title>
     </head>
-    <body>
+    <body >
         <header>
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc41b0b5-180c-4310-94a4-f5bc7b0fd466/d4i80r8-0970f866-8bcf-44b3-97e3-71a2dbcf8afc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmM0MWIwYjUtMTgwYy00MzEwLTk0YTQtZjViYzdiMGZkNDY2XC9kNGk4MHI4LTA5NzBmODY2LThiY2YtNDRiMy05N2UzLTcxYTJkYmNmOGFmYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.nu5kpb-erf8_SueckddOCM-Dq_qsOOAFaBns8a7CPVY" alt="Logo">
-            <h1> <span id="userName"></span> WE SELL CARS!</h1>
-            <nav>
-                <ul>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc41b0b5-180c-4310-94a4-f5bc7b0fd466/d4i80r8-0970f866-8bcf-44b3-97e3-71a2dbcf8afc.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmM0MWIwYjUtMTgwYy00MzEwLTk0YTQtZjViYzdiMGZkNDY2XC9kNGk4MHI4LTA5NzBmODY2LThiY2YtNDRiMy05N2UzLTcxYTJkYmNmOGFmYy5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.nu5kpb-erf8_SueckddOCM-Dq_qsOOAFaBns8a7CPVY" alt="Logo" class="logo">
+            <h1 class="welcomeMsg"> <span id="userName"></span> WE SELL CARS!</h1>
+            <nav class="mainNav">
+               <ul>
                     <li class="nav"> 
-                     <a href="https://mohammad-qethama.github.io/html/Home">Home</a>
+                         <a href="https://mohammad-qethama.github.io/html/Home">Home</a>
                     </li>
-                    <li class="nav"> <a href="">Cars</a> </li>
-                    <li class="nav"><a href="https://maysaahourani.github.io/services-reapairs/carsservices"> Services&Repair </a> </li>
-                    <li class="nav"><a href="">Contact us</a> </li>
+                    <li class="nav">
+                        <a href="">Cars</a> 
+                    </li>
+                    <li class="nav">
+                        <a href="https://maysaahourani.github.io/services-reapairs/carsservices"> Services&Repair </a> 
+                    </li>
+                    <li class="nav">
+                        <a href="">Contact us</a> 
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -22,25 +29,38 @@
            <!-- main content starterd -->     
         <main >
             
+        
+
             <h1>Intruduction</h1>
             <p>
-            We provide multiple services for cars. Such as sale ,service and rent a car.
+                 We provide multiple services for cars. Such as sale ,service and rent a car.
             </p>
-            <p>you can change the color of the page by the bellow buttons
-                </p>
-            <div><button type="button" onclick="changeColor('blue')">Blue</button>
-            <button type="button" onclick="changeColor('white')">White</button></div>
+            <p>
+                you can change the color of the page by the bellow buttons
+            </p>
+           
+            <div>
+                <button type="button" onclick="changeColor('blue')">Blue</button>
+                <button type="button" onclick="changeColor('white')">White</button>
+            </div>
+           
             <h1> Cars for sale </h1>
             <div><button type="button" id="toggle" onclick="showCars()">Hide</button></div>
             <div id="cars">
-                <h2><img src="BMW-520i.webp" alt="Erorr"></h2>
-                <p>BMW 520 model 2012 fully loaded with a good conditons price 12000jd</p>
-
-                <h3><img src="Mercedes-2016.jpg" alt="Erorr"></h3>
-                <p>Mercedes e200 model 2016 fully loaded with a good conditons price 20000jd </p>
-            
-                <h4><img src="landcruiser.jpg" alt="Erorr"></h4>
-                <p>Land cruiser model 2016 fully loaded with a good conditons 4x4 price 35000jd</p>
+                <ul class="carList">
+                    <li>
+                        <img src="BMW-520i.webp" alt="Erorr">
+                        <p>BMW 520 model 2012 fully loaded with a good conditons price 12000jd</p>
+                    </li>
+                    <li>
+                            <img src="Mercedes-2016.jpg" alt="Erorr">
+                            <p>Mercedes e200 model 2016 fully loaded with a good conditons price 20000jd </p>
+                    </li>
+                    <li>
+                        <img src="landcruiser.jpg" alt="Erorr">
+                        <p>Land cruiser model 2016 fully loaded with a good conditons 4x4 price 35000jd</p>
+                    </li>
+                </ul>
             </div>
         </main> 
         
@@ -50,5 +70,4 @@
         </footer>
         <script src="h.js"></script>
     </body>
-    <script src=""></script>
 </html>

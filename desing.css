@@ -1,0 +1,57 @@
+body {
+    width: 960px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+header,footer {
+    background-color: lightblue;
+}
+
+main img {
+    width: 200px;
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.welcomeMsg {
+    display: inline;
+}
+
+p {
+    font-size: 12px;
+}
+
+.mainNav {
+    float: right;
+}
+
+.mainNav ul {
+    padding: 0;
+}
+
+.mainNav li {
+    display: inline ;
+    margin-right: 10px;
+    list-style-type: none;
+}
+
+.carList {
+    padding:0;
+}
+
+.carList li{
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.carList li p{
+    display: inline;
+    vertical-align: top;
+}
